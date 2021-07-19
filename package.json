@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "bin": {
-    "noir": "Hades.js"
+    "noir2": "Hades.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
