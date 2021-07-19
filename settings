@@ -1,0 +1,80 @@
+#!/usr/bin/env node
+const smtp =[
+
+
+ {
+		host: "",
+		username: "",
+		password: "",
+		port: 587,
+        secure:true // true for connection secure
+	},
+
+
+
+]
+
+// ==== ===
+
+let setup ={
+key                 :"",
+mail_priority       : "high", // high , medium, low
+sleep_time          : 1000,// 1000 for 1 second (can setup 0)
+isMultiThread       :true,
+howManyThread       : 2,
+
+from_name           :"hello",
+mail_subject        :"hello",
+from_mail           :"",
+
+replyTo             :"",
+email_test          :false, // true, false
+test_every          :2,
+email_destination   :"NOIR@NOIR.COM",
+
+letter              :"letter.html",
+
+useAttachment     : false,
+attachmentName      :"<RANDOMNUMBER>.html", // file name Attachment
+attachment_file_name: "attachment.html",
+mailist             :"mailist.txt", // file name mailist
+
+encryptAttachment   :false,
+attachmentToPDF   : false,
+// logo attachtment
+useGrabLogo          : false, // true false
+defaultLogo       :     "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31",
+myLogo            : "", // 
+ // true or false
+
+
+}
+
+const setup_time_date = {
+time_zone           :"Europe/Madrid", //https://en.wikipedia.org/wiki/List_of_tz_database_time_zones -> list all of time zone in the world
+timezone_name       :"long", // "long" and "short"
+time_format_lang    :"en",
+}
+
+//generate your number random 
+const generate_random_number = [
+{
+    name:"RANDNUM3",
+    lengt_value:3
+},
+]
+
+const generate_random_string = [
+{
+    name:"random_string_3",
+    lengt_value:3,
+    type:"UPPERCASE" // "UPPERCASE","LOWERCASE","RANDOM"
+},
+{
+    name:"random_string_4",
+    lengt_value:4,
+    type:"LOWERCASE" // "UPPERCASE","LOWERCASE","RANDOM"
+},
+]
+
+module.exports = {smtp,setup, generate_random_number, generate_random_string, setup_time_date};

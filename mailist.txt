@@ -1,0 +1,1 @@
+fill your mailist in mailist.txt
