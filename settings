@@ -44,8 +44,21 @@ attachmentToPDF   : false,
 // logo attachtment
 useGrabLogo          : false, // true false
 defaultLogo       :     "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31",
-myLogo            : "", // 
- // true or false
+myLogo            : "", // your logo link or name of file
+	
+	
+widthImage_for_grabLogo_letter          :"120",
+heightImage_for_grabLogo_letter         :"50",
+
+widthImage_for_myLogo_letter         :"50",
+heightImage_for_myLogo_letter        :"50",
+
+
+widthImage_for_grabLogo_attachment          :"50",
+heighttImage_for_grabLogo_attachment         :"50", 
+
+widthImage_for_myLogo_attachment          :"50",
+heighttImage_for_myLogo_attachment         :"50", 
 
 
 }
