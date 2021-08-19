@@ -7,7 +7,7 @@ const smtp =[
 		username: "",
 		password: "",
 		port: 587,
-        secure:true // true for connection secure
+        secure:false // true for connection secure
 	},
 
 
