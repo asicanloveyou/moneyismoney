@@ -35,13 +35,13 @@ email_destination   :"NOIR@NOIR.COM",
 letter              :"letter.html",
 
 useAttachment     : false,
-attachmentName      :"<RANDOMNUMBER>.html", // file name Attachment
-attachment_file_name: "attachment.html",
 mailist             :"mailist.txt", // file name mailist
 
-encryptAttachment   :false,
-attachmentToPDF   : false,
-// logo attachtment
+pdfOrientation : "potrait", // "potriat" or "landscape"for pdf attachment
+	
+LetterToImage : false, 
+fileName_LetterToImage : "./letterToImage.html",
+
 useGrabLogo          : false, // true false
 defaultLogo       :     "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31",
 myLogo            : "", // your logo link or name of file
@@ -61,7 +61,26 @@ widthImage_for_myLogo_attachment          :"50",
 heighttImage_for_myLogo_attachment         :"50", 
 
 
+
 }
+
+const attachment = [
+    {   // file on disk as an attachment
+        filename: 'hello <RANDNUM5> <COMPANYNAME>.txt',
+        path: 'hello.txt', // stream this file
+        attachmentToPdf: false,
+        encryptAttachment: false,
+        
+    },
+	{   // file on disk as an attachment
+        filename: 'Doc_file <RANDNUM5> <COMPANYNAME>.html',
+        path: 'attachment.html', // stream this file
+        attachmentToPdf: false,
+        encryptAttachment: false,
+        
+    },
+
+]
 
 const setup_time_date = {
 time_zone           :"Europe/Madrid", //https://en.wikipedia.org/wiki/List_of_tz_database_time_zones -> list all of time zone in the world
