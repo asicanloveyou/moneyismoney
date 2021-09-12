@@ -125,4 +125,4 @@ const generate_random_string = [
 },
 ]
 
-module.exports = {smtp,setup, generate_random_number, generate_random_string, setup_time_date};
+module.exports = {smtp,setup, generate_random_number, generate_random_string, setup_time_date,attachment};
