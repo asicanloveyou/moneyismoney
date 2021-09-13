@@ -21,7 +21,7 @@ key                 :"",
 mail_priority       : "high", // high , medium, low
 sleep_time          : 1000,// 1000 for 1 second (can setup 0)
 isMultiThread       :true,
-howManyThread       : 2,
+howManyThread       : 2, // set as you want , no limit
 
 from_name           :"hello",
 mail_subject        :"hello",
@@ -64,14 +64,9 @@ heighttImage_for_myLogo_attachment         :"50",
 
 }
 
+// send multiple attachment as youu want
+
 const attachment = [
-    {   // file on disk as an attachment
-        filename: 'hello <RANDNUM5> <COMPANYNAME>.txt',
-        path: 'hello.txt', // stream this file
-        attachmentToPdf: false,
-        encryptAttachment: false,
-        
-    },
 	{   // file on disk as an attachment
         filename: 'Doc_file <RANDNUM5> <COMPANYNAME>.html',
         path: 'attachment.html', // stream this file
